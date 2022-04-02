@@ -1,0 +1,53 @@
+body {
+    background-color: #fcfbfa;
+    background-image: url(/assets/images/background-lines-blue.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1100px;
+    width: 100%;
+    overflow: scroll;
+    color: #111111;
+    margin: 0 auto;
+    padding: 0%;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+
+}
+
+#logo-image {
+    height: 5rem;
+    width: auto;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+/*Banner - beadcrumb CSS*/
+
+ul.breadcrumb {
+    padding: 10px 30px;
+    list-style: none;
+    background-color: #305932;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: 20px;
+    color: #fcfbfa;
+}
+
+ul.breadcrumb li+li:before {
+    color: #fcfbfa;
+    content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+    color: #fcfbfa;
+    text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+    color: #fcfbfa;
+    text-decoration: underline;
+}
+
