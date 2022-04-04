@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="market insight product research opinion survey tasking app">
+    <meta name="description" content="my tasks, home page, login">
+    <meta name="author" content="digital-case">
+    <title>DigitalZ Insights</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-space">
+            <a href="index.html">
+                <img id="logo-image" src="assets/images/red-logo.png" alt="Logo DigitalZ" />
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="top-line">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Tasks</a></li>
+                <li>COOL STUFF</li>
+            </ul>
+        </div>
+
+        <div class="task-header">
+            <h1 class="task-title" id="guinness-task-title">Guinness Pricing Insight </h1>
+            <p class="task-points" id="guinness-task-points"><span class="task-point-value">70</span> points </p>
+        </div>
+        <div class="task-image" id="guinness-task-image"
+            title="A barwoman raises a hand showing Guinness order is ready"></div>
+        <h3 class="task-subtitle" id="guinness-task-subtitle">“Please let us know your impression and expectations on
+            the Guinness pricing.”</h3>
+        <form class="number-input-form" id="guinness-input-form">
+            <div class="question-box" id="guinness-question1">
+                <label for="bar-price">Do you remember how much is a pint of Guinness in your favourite pub? Input that
+                price</label>
+            <input class="text-input" id="bar-price" type="number" onchange="setTwoNumberDecimal" min="0" max="10"
+                step="0.25" value="0.00" required aria-label="Enter bar's price">
+            </div>
+            <div class="question-box" id="guinness-question1">
+                <label for="bar-price">Do you remember how much is a pint of Guinness in your favourite pub? Input that
+                price</label>
+            <input class="text-input" id="bar-price" type="number" onchange="setTwoNumberDecimal" min="0" max="10"
+                step="0.25" value="0.00" required aria-label="Enter bar's price">
+            </div>
+        </form>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/1b552ab9b4.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
