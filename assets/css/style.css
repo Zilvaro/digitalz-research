@@ -78,6 +78,10 @@ ul.breadcrumb li a:hover {
 .task-image-box, #guinness-image {
     background-image: url(/assets/images/guinness-task-image.webp);
 }
+.task-image-box, #gummies-image {
+    background-image: url(/assets/images/woman-eating-gummies.webp);
+}
+
 
 
 .task-text-box {
