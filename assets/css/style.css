@@ -33,18 +33,19 @@ ul.breadcrumb {
 
 ul.breadcrumb li {
     display: inline;
-    font-size: 4.5vw;
+    font-size: 3.5vw;
     color: #fcfbfa;
 }
 
 ul.breadcrumb li+li:before {
-    color: #fcfbfa;
+   color: #fcfbfa;
     content: "/\00a0";
 }
 
 ul.breadcrumb li a {
     color: #fcfbfa;
     text-decoration: none;
+    font-size: 4.5vw;
 }
 
 ul.breadcrumb li a:hover {
@@ -81,8 +82,6 @@ ul.breadcrumb li a:hover {
 .task-image-box, #gummies-image {
     background-image: url(/assets/images/woman-eating-gummies.webp);
 }
-
-
 
 .task-text-box {
     width: 67%;
@@ -209,3 +208,91 @@ ul.breadcrumb li a:hover {
     color: #305932;
     font-weight: 600;
 }
+
+/*Task 'Number Input Form CSS*/
+
+.task-points {
+    width: 95%;
+    height: 7vw;
+    font-size: 5vw;
+    text-decoration: underline;
+    text-align: right;
+    vertical-align: middle;
+    padding-bottom: 3vw;
+}
+
+.task-point-value {
+    font-weight: 600;
+    color: #a80038;
+}
+
+.task-image {
+    width: 100%;
+    height: 66vw;
+    margin: 0 auto;
+    background-image: url(/assets/images/guinness-full-photo.webp);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.task-subtitle {
+    width: 96%;
+    padding: 1vw;
+    text-align: center;
+    font-size: 3.5vw;
+    margin-bottom: 8vw;
+}
+
+.question-box {
+    width: 100%;
+    margin-bottom: 4vw;
+}
+.var1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+.number-input-label {
+    width: 70%;
+    height: auto;
+    font-size: 3vw;
+    font-weight: 400;
+    position: relative;
+    left: 6%;
+}
+.number-input {
+    width: 10%;
+    height: 4.5vw;
+    font-size: 2.5vw;
+    padding-left: 1vw;
+    position: relative;
+    left: 10%;
+}
+
+.send-button {
+    width: 20%;
+    height: 5vw;
+    margin: 0 auto;
+    margin-top: 8vw;
+    border-radius: 2px;
+    padding: 10px auto;
+    text-align: center;
+    font-size: 3vw;
+    background-color: #305932;
+    color: #fafafa;
+    display: block;
+}
+
+.send-button:hover {
+    background-color: #fafafa;
+    color: #305932;
+    font-weight: 600;
+}
+
+.filler {
+    width: 100%;
+    height: 4rem;
+    clear: both;
+    background-color: transparent;
+}
+
