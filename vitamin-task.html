@@ -23,35 +23,38 @@
     </header>
 
     <main>
-        
+
 
         <div class="top-line">
             <ul class="breadcrumb">
                 <li><a href="index.html">My Tasks</a></li>
-                <li>Guinness Pricing Insight</li>
+                <li>Best packaging design</li>
             </ul>
         </div>
         <div class="task-points">
-         <p id="vitamin-task-points"><span class="task-point-value">50</span> points </p>
+            <p id="vitamin-task-points"><span class="task-point-value">50</span> points </p>
         </div>
-        <div class="task-image" id="vitamin-task-image"
-            title="A pile of multicoloured vitamin gummies on a table"></div>
-        
-        <h3 class="task-subtitle" id="guinness-task-subtitle">“Please let us know your impression and expectations on
-            the Guinness pricing.”</h3>
-        
+        <div class="task-image" id="vitamin-task-image" title="A pile of multicoloured vitamin gummies on a table">
+        </div>
+
+        <h3 class="task-subtitle" id="guinness-task-subtitle">“If all the ingredients and dosages are identical, which
+            packaging of the Apple Cider Vinegar gummies is the most appealing to you? You can mark ONLY BEST ONE in
+            your opinion:”</h3>
+
         <form class="number-input-form" id="guinness-input-form">
             <div class="question-box" id="guinness-question1">
-                <label class="var1 number-input-label" for="bar-price">Do you remember how much is a pint of Guinness in your favourite pub? Input that
+                <label class="var1 number-input-label" for="bar-price">Do you remember how much is a pint of Guinness in
+                    your favourite pub? Input that
                     price</label>
-                <input class="var1 number-input" id="bar-price" type="number" onchange="setTwoNumberDecimal" min="3.00" max="7.00"
-                    step="0.10" value="0.00" required aria-label="Enter bar's price">
+                <input class="var1 number-input" id="bar-price" type="number" onchange="setTwoNumberDecimal" min="3.00"
+                    max="7.00" step="0.10" value="0.00" required aria-label="Enter bar's price">
             </div>
             <div class="question-box" id="guinness-question2">
-                <label class="var1 number-input-label" for="my-price">Please, write what do you think should be a fair price of pint of Guinness in the
+                <label class="var1 number-input-label" for="my-price">Please, write what do you think should be a fair
+                    price of pint of Guinness in the
                     pubs?</label>
-                <input class="var1 number-input" id="bar-price" type="number" onchange="setTwoNumberDecimal" min="3.00" max="7.00"
-                    step="0.10" value="0.00" required aria-label="Enter my price">
+                <input class="var1 number-input" id="bar-price" type="number" onchange="setTwoNumberDecimal" min="3.00"
+                    max="7.00" step="0.10" value="0.00" required aria-label="Enter my price">
             </div>
             <input class="send-button" type="submit" value="Submit" aria-label="press to submit">
         </form>
