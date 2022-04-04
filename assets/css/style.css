@@ -88,14 +88,13 @@ ul.breadcrumb li a:hover {
     width: 67%;
     height: 29vw;
     background: #fcfbfa;
-    display: inline-block;
+    display: block;
     float: right;
    }
 
 .text-box {
     width: 96%;
     height: 13vw;
-    background: ;
     position: relative;
     top: 6vw;
     left: 2vw;
@@ -106,7 +105,6 @@ ul.breadcrumb li a:hover {
 .point-box {
     width: 50%;
     height: 6vw;
-    background: ;
     position: relative;
     top: 7vw;
     left: 2vw;
