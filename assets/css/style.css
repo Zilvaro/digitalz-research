@@ -230,10 +230,16 @@ ul.breadcrumb li a:hover {
     width: 100%;
     height: 66vw;
     margin: 0 auto;
-    background-image: url(/assets/images/guinness-full-photo.webp);
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#guinness-task-image {
+    background-image: url(/assets/images/guinness-full-photo.webp);
+}
+#vitamin-task-image {
+    background-image: url(/assets/images/gummies-image.webp);
 }
 
 .task-subtitle {
