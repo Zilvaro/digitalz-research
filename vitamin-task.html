@@ -40,22 +40,36 @@
         <h3 class="task-subtitle" id="guinness-task-subtitle">“If all the ingredients and dosages are identical, which
             packaging of the Apple Cider Vinegar gummies is the most appealing to you? You can mark ONLY BEST ONE in
             your opinion:”</h3>
+        
 
-        <form class="number-input-form" id="guinness-input-form">
-            <div class="question-box" id="guinness-question1">
-                <label class="var1 number-input-label" for="bar-price">Do you remember how much is a pint of Guinness in
-                    your favourite pub? Input that
-                    price</label>
-                <input class="var1 number-input" id="bar-price" type="number" onchange="setTwoNumberDecimal" min="3.00"
-                    max="7.00" step="0.10" value="0.00" required aria-label="Enter bar's price">
+            <div id="vitamin2-image"></div>
+        <form class="radio-input-form" id="vitamin-input-form">
+            <div class="radio-question-box" id="vitamins-question1">
+                <input class="var2 radio-input" id="product1" type="radio" name="brand" value="Essential Elements">
+                <label class="var2 radio-label" for="product1">Essential Elements</label>
+                <div class="var2 radio-image" id="vitamin1-image" title="ACW Essential Elements vitamins bottle"></div><br>
             </div>
-            <div class="question-box" id="guinness-question2">
-                <label class="var1 number-input-label" for="my-price">Please, write what do you think should be a fair
-                    price of pint of Guinness in the
-                    pubs?</label>
-                <input class="var1 number-input" id="bar-price" type="number" onchange="setTwoNumberDecimal" min="3.00"
-                    max="7.00" step="0.10" value="0.00" required aria-label="Enter my price">
+            <div class="radio-question-box" id="vitamins-question2">
+                <input class="var2 radio-input" id="product2" type="radio" name="brand" value="Garden of Life" checked>
+                <label class="var2 radio-label" for="product2">Garden of Life</label>
+                <div class="var2 radio-image" id="vitamin2-image" title="ACW Health Nutrition vitamins bottle"></div>
             </div>
+            <div class="radio-question-box" id="vitamins-question3">
+                <input class="var2 radio-input" id="product3" type="radio" name="brand" value="Viva Naturals">
+                <label class="var2 radio-label" for="product3">Viva Naturals</label>
+                <div class="var2 radio-image" id="vitamin3-image" title="ACW Viva Naturals vitamins bottle"></div>
+            </div>
+            <div class="radio-question-box" id="vitamins-question4">
+                <input class="var2 radio-input" id="product4" type="radio" name="brand" value="Natures Craft">
+                <label class="var2 radio-label" for="product4">Natures Craft</label>
+                <div class="var2 radio-image" id="vitamin4-image" title="ACW Natures Craft vitamins bottle"></div>
+            </div>
+            <div class="radio-question-box" id="vitamins-question5">
+                <input class="var2 radio-input" id="product5" type="radio" name="brand" value="New Nordic">
+                <label class="var2 radio-label" for="product5">New Nordic</label>
+                <div class="var2 radio-image" id="vitamin5-image" title="ACW New Nordic vitamins bottle"></div>
+            </div>
+            
             <input class="send-button" type="submit" value="Submit" aria-label="press to submit">
         </form>
     </main>

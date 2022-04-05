@@ -38,7 +38,7 @@ ul.breadcrumb li {
 }
 
 ul.breadcrumb li+li:before {
-   color: #fcfbfa;
+    color: #fcfbfa;
     content: "/\00a0";
 }
 
@@ -60,7 +60,7 @@ ul.breadcrumb li a:hover {
     margin: 1vw auto;
     border: 2px black dotted;
     display: inline-block;
-   }
+}
 
 .task-box {
     display: inline-block;
@@ -69,17 +69,20 @@ ul.breadcrumb li a:hover {
 .task-image-box {
     width: 32%;
     height: 29vw;
-    background-position: center; 
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
 
 /* Tasks-box images*/
-.task-image-box, #guinness-image {
+.task-image-box,
+#guinness-image {
     background-image: url(/assets/images/guinness-task-image.webp);
 }
-.task-image-box, #gummies-image {
+
+.task-image-box,
+#gummies-image {
     background-image: url(/assets/images/woman-eating-gummies.webp);
 }
 
@@ -89,7 +92,7 @@ ul.breadcrumb li a:hover {
     background: #fcfbfa;
     display: block;
     float: right;
-   }
+}
 
 .text-box {
     width: 96%;
@@ -99,7 +102,7 @@ ul.breadcrumb li a:hover {
     left: 2vw;
     font-size: 4vw;
     font-weight: 600;
-   }
+}
 
 .point-box {
     width: 50%;
@@ -109,7 +112,7 @@ ul.breadcrumb li a:hover {
     left: 2vw;
     font-size: 4vw;
     font-weight: 400;
-   }
+}
 
 .points-size {
     font-size: 5vw;
@@ -125,26 +128,26 @@ ul.breadcrumb li a:hover {
 }
 
 .task-box-timer {
-    width:100%;
-    height: 10.5vw; 
-    background: green;  
-   }
+    width: 100%;
+    height: 10.5vw;
+    background: green;
+}
 
 
-   /*main-banner-css*/
+/*main-banner-css*/
 
 #task-main-banner {
     width: 99%;
     height: 45vw;
     margin: 0 auto;
     background-image: url(/assets/images/banner-lights.webp);
-    background-position: center; 
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.9;
     border: 2px black dotted;
     display: inline-block;
-   }
+}
 
 .main-banner-box {
     display: inline-block;
@@ -165,14 +168,16 @@ ul.breadcrumb li a:hover {
     font-size: 4.5vw;
     text-align: center;
     vertical-align: middle;
-   }
-.form-box{
+}
+
+.form-box {
     width: 100%;
-    display:inline-block;
-    position:relative;
+    display: inline-block;
+    position: relative;
     top: 25%;
     left: 17%;
-    }
+}
+
 .text-input {
     width: 45%;
     height: 5vw;
@@ -181,8 +186,9 @@ ul.breadcrumb li a:hover {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 2vw;
     padding-left: 1vw;
-    
+
 }
+
 .text-input:hover {
     border-color: #305932;
     border-width: 3px;
@@ -200,7 +206,7 @@ ul.breadcrumb li a:hover {
     font-size: 2vw;
     background-color: #305932;
     color: #fafafa;
-    
+
 }
 
 #start-button:hover {
@@ -209,7 +215,7 @@ ul.breadcrumb li a:hover {
     font-weight: 600;
 }
 
-/*Task 'Number Input Form CSS*/
+/*Task 'Number Input Form' CSS*/
 
 .task-points {
     width: 95%;
@@ -230,7 +236,7 @@ ul.breadcrumb li a:hover {
     width: 100%;
     height: 66vw;
     margin: 0 auto;
-    background-position: center; 
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -238,6 +244,7 @@ ul.breadcrumb li a:hover {
 #guinness-task-image {
     background-image: url(/assets/images/guinness-full-photo.webp);
 }
+
 #vitamin-task-image {
     background-image: url(/assets/images/gummies-image.webp);
 }
@@ -254,10 +261,12 @@ ul.breadcrumb li a:hover {
     width: 100%;
     margin-bottom: 4vw;
 }
+
 .var1 {
     display: inline-block;
     vertical-align: middle;
 }
+
 .number-input-label {
     width: 70%;
     height: auto;
@@ -266,6 +275,7 @@ ul.breadcrumb li a:hover {
     position: relative;
     left: 6%;
 }
+
 .number-input {
     width: 10%;
     height: 4.5vw;
@@ -302,3 +312,60 @@ ul.breadcrumb li a:hover {
     background-color: transparent;
 }
 
+/*Task 'Radio Input Form' CSS*/
+
+.radio-question-box {
+    width: 100%;
+    margin-bottom: 4vw;
+}
+
+.var2 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.radio-input {
+    width: 3vw;
+    height: 3vw;
+    position: relative;
+    left: 15%;
+}
+
+.radio-label {
+    width: 50%;
+    height: 4vw;
+    font-size: 3vw;
+    position: relative;
+    left: 15%;
+}
+
+.radio-image {
+    width: 30vw;
+    height: 30vw;
+    background-color: #fafafa;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    left: 2%;
+}
+
+#vitamin1-image {
+    background-image: url(/assets/images/ACW1-image.jpg);
+}
+
+#vitamin2-image {
+    background-image: url(/assets/images/ACW2-image.jpg);
+}
+
+#vitamin3-image {
+    background-image: url(/assets/images/ACW3-image.jpg);
+}
+
+#vitamin4-image {
+    background-image: url(/assets/images/ACW4-image.jpg);
+}
+
+#vitamin5-image {
+    background-image: url(/assets/images/ACW5-image.jpg);
+}
