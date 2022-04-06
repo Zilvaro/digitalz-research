@@ -369,3 +369,15 @@ ul.breadcrumb li a:hover {
 #vitamin5-image {
     background-image: url(/assets/images/ACW5-image.jpg);
 }
+
+/* Count-down clock */
+
+.cowntdown-clock {
+    width: 45%;
+    height: 4vw;
+    font-size: 3vw;
+    font-weight: 300;
+    color: #fafafa;
+    float: right;
+    margin-top: 3vw;
+}
