@@ -20,9 +20,12 @@ function setTwoNumberDecimal(event) {
  * - when the time is elapsed, the task is replaced with task graph
  */
 
- const deadline = 'April 07 2022 17:59:59 GMT+0200';
 
- function getTimeRemaining(endtime){
+  /** Cowntdown fixed time timer*/
+
+  const deadline = 'April 7 2022 23:59:59 GMT+0200';
+
+  function getTimeRemaining(endtime){
     const total = Date.parse(endtime) - Date.parse(new Date());
     const seconds = Math.floor( (total/1000) % 60 );
     const minutes = Math.floor( (total/1000/60) % 60 );
@@ -38,21 +41,37 @@ function setTwoNumberDecimal(event) {
     };
   }
 
-  getTimeRemaining(deadline).minutes;
-
   function initializeClock(id, endtime) {
     const clock = document.getElementById(id);
-    const timeinterval = setInterval(() => {
-      const t = getTimeRemaining(endtime);
-      clock.innerHTML =  t.days +' day(s) '+ t.hours + 'h : ' + t.minutes + 'm :' + t.seconds + 's';
+    const daysSpan = clock.querySelector('.days');
+    const hoursSpan = clock.querySelector('.hours');
+    const minutesSpan = clock.querySelector('.minutes');
+    const secondsSpan = clock.querySelector('.seconds');
     
+    function updateClock(){
+      const t = getTimeRemaining(endtime);
+  
+      daysSpan.innerHTML = t.days;
+      hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+      minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+      secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+      clock.innerHTML = 'days: ' + t.days + '<br>' +
+                        'hours: '+ t.hours + '<br>' +
+                        'minutes: ' + t.minutes + '<br>' +
+                        'seconds: ' + t.seconds;
       if (t.total <= 0) {
         clearInterval(timeinterval);
       }
-    },1000);
+    }
+    
+    updateClock(); // run function once at first to avoid delay
+    var timeinterval = setInterval(updateClock,1000);
   }
 
   initializeClock('clockdiv', deadline);
+
+  
 
 
 
