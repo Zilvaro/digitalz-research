@@ -9,6 +9,28 @@ function setTwoNumberDecimal(event) {
  * - starts contdown clock
  */
 
+ let nameForm = document.getElementById('name-form');
+ nameForm.addEventListener('submit', handleSubmit);
+ 
+ function handleSubmit(event) {
+   // Prevent the form from being submitted
+   event.preventDefault();
+ 
+   // Note the use of .elements (a simpler way to get form field values and using the elements id eg ['username'])
+   let userName = nameForm.elements['username'].value;
+    
+   // Remember template literals with backticks?
+   let html = `
+    <h2 id="greeting-text">Good luck ${userName}!</h2>
+   `;
+   ________________________________________________________-
+ 
+   // Put the above HTML in the response div below the form
+   let responseDiv = document.getElementById('response');
+   responseDiv.innerHTML = html;
+   responseDiv.style.display = 'block';
+ }
+
 /** Task activation function
  * checks if name is entered
  * if true - opens the task
@@ -41,8 +63,9 @@ function setTwoNumberDecimal(event) {
     };
   }
 
-  function initializeClock(id, endtime) {
+   function initializeClock(id, endtime) {
     const clock = document.getElementById(id);
+    clock.style.display = 'block';
     const daysSpan = clock.querySelector('.days');
     const hoursSpan = clock.querySelector('.hours');
     const minutesSpan = clock.querySelector('.minutes');
@@ -56,10 +79,7 @@ function setTwoNumberDecimal(event) {
       minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
       secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
-      clock.innerHTML = 'days: ' + t.days + '<br>' +
-                        'hours: '+ t.hours + '<br>' +
-                        'minutes: ' + t.minutes + '<br>' +
-                        'seconds: ' + t.seconds;
+      clock.innerHTML = + t.days + 'd : ' + t.hours + 'h : '+ t.minutes + 'm : ' + t.seconds + 's';
       if (t.total <= 0) {
         clearInterval(timeinterval);
       }

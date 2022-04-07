@@ -372,7 +372,11 @@ ul.breadcrumb li a:hover {
 
 /* Count-down clock */
 
-.cowntdown-clock {
+
+
+#clockdiv {
+    display: none;
+
     width: 45%;
     height: 4vw;
     font-size: 3vw;
