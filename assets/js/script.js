@@ -24,6 +24,13 @@ function setTwoNumberDecimal(event) {
       <div class="main-banner-box" id="banner-box-text">
         <h2 id="greeting-text">Good luck ${userName}!</h2>
       </div> 
+      <div class="main-banner-box" id="timer-box">
+        <div id="clockdiv">
+          Days: <span class="days"></span><br>
+          Hours: <span class="hours"></span><br>
+          Minutes: <span class="minutes"></span><br>
+          Seconds: <span class="seconds"></span>
+      </div>
    `;
   
  
@@ -31,7 +38,7 @@ function setTwoNumberDecimal(event) {
    let responseDiv = document.getElementById('task-main-banner');
    responseDiv.innerHTML = html;
    initializeClock('clockdiv', deadline);
-  }
+   }
 
 /** Task activation function
  * checks if name is entered
@@ -83,7 +90,7 @@ function setTwoNumberDecimal(event) {
       minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
       secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
-      clock.innerHTML = t.minutes + 'm  :  ' + t.seconds + 's';
+      clock.innerHTML = 'Time to complete tasks:  ' + t.minutes + 'm  :  ' + t.seconds + 's';
       if (t.total <= 0) {
         clearInterval(timeinterval);
       }
