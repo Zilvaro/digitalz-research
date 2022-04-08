@@ -385,3 +385,14 @@ ul.breadcrumb li a:hover {
     float: right;
     margin-top: 3vw;
 }
+
+.minutes {
+    width: 45%;
+    height: 4vw;
+    font-size: 3vw;
+    font-weight: 300;
+    color: #fafafa;
+    float: right;
+    margin-top: 3vw;
+
+}

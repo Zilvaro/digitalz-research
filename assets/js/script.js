@@ -47,7 +47,9 @@ function setTwoNumberDecimal(event) {
 
   /** Cowntdown fixed time timer*/
 
-  const deadline = 'April 8 2022 23:59:59 GMT+0200';
+  const timeInMinutes = 10;
+  const currentTime = Date.parse(new Date());
+  const deadline = new Date(currentTime + timeInMinutes*60*1000);
 
   function getTimeRemaining(endtime){
     const total = Date.parse(endtime) - Date.parse(new Date());
@@ -81,7 +83,7 @@ function setTwoNumberDecimal(event) {
       minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
       secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
-      clock.innerHTML = + t.days + 'd : ' + t.hours + 'h : '+ t.minutes + 'm : ' + t.seconds + 's';
+      clock.innerHTML = t.minutes + 'm  :  ' + t.seconds + 's';
       if (t.total <= 0) {
         clearInterval(timeinterval);
       }
