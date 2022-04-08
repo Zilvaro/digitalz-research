@@ -25,11 +25,13 @@ function setTwoNumberDecimal(event) {
         <h2 id="greeting-text">Good luck ${userName}!</h2>
       </div> 
    `;
-   
+  
+ 
    // Put the above HTML in the response div below the form
    let responseDiv = document.getElementById('task-main-banner');
    responseDiv.innerHTML = html;
- }
+   initializeClock('clockdiv', deadline);
+  }
 
 /** Task activation function
  * checks if name is entered
@@ -45,7 +47,7 @@ function setTwoNumberDecimal(event) {
 
   /** Cowntdown fixed time timer*/
 
-  const deadline = 'April 7 2022 23:59:59 GMT+0200';
+  const deadline = 'April 8 2022 23:59:59 GMT+0200';
 
   function getTimeRemaining(endtime){
     const total = Date.parse(endtime) - Date.parse(new Date());
@@ -89,8 +91,7 @@ function setTwoNumberDecimal(event) {
     var timeinterval = setInterval(updateClock,1000);
   }
 
-  initializeClock('clockdiv', deadline);
-
+  
   
 
 
