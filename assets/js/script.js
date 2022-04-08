@@ -21,14 +21,14 @@ function setTwoNumberDecimal(event) {
     
    // Remember template literals with backticks?
    let html = `
-    <h2 id="greeting-text">Good luck ${userName}!</h2>
+      <div class="main-banner-box" id="banner-box-text">
+        <h2 id="greeting-text">Good luck ${userName}!</h2>
+      </div> 
    `;
-   ________________________________________________________-
- 
+   
    // Put the above HTML in the response div below the form
-   let responseDiv = document.getElementById('response');
+   let responseDiv = document.getElementById('task-main-banner');
    responseDiv.innerHTML = html;
-   responseDiv.style.display = 'block';
  }
 
 /** Task activation function
