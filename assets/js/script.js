@@ -7,6 +7,7 @@ function setTwoNumberDecimal(event) {
  * when name is entered and Start:
  * - banner changes to Welcome 'name' & good luck
  * - starts contdown clock
+ * - activates task links
  */
 
  let nameForm = document.getElementById('name-form');
@@ -30,8 +31,14 @@ function setTwoNumberDecimal(event) {
           Hours: <span class="hours"></span><br>
           Minutes: <span class="minutes"></span><br>
           Seconds: <span class="seconds"></span>
-      </div>
-   `;
+      </div>   
+   `
+   let taskAllow1 = document.getElementById('guinness-go');
+    taskAllow1.innerHTML = '<a href="../guinness-task.html"><i class="fa-solid fa-circle-chevron-right"></i></a>'
+   
+   let taskAllow2 = document.getElementById('vitamins-go');
+    taskAllow2.innerHTML = '<a href="../vitamin-task.html"><i class="fa-solid fa-circle-chevron-right"></i></a>'
+   ;
   
  
    // Put the above HTML in the response div below the form
@@ -40,19 +47,12 @@ function setTwoNumberDecimal(event) {
    initializeClock('clockdiv', deadline);
    }
 
-/** Task activation function
- * checks if name is entered
- * if true - opens the task
- * if not - alert: you have to enter the your name first
- */
 
-/** Countdown clock
+
+/** Countdown clock fixed time
  * - starts when name is entered
  * - when the time is elapsed, the task is replaced with task graph
  */
-
-
-  /** Cowntdown fixed time timer*/
 
   const timeInMinutes = 10;
   const currentTime = Date.parse(new Date());
