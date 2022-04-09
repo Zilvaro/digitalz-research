@@ -48,7 +48,6 @@ function setTwoNumberDecimal(event) {
    }
 
 
-
 /** Countdown clock fixed time
  * - starts when name is entered
  * - when the time is elapsed, the task is replaced with task graph
@@ -101,17 +100,16 @@ function setTwoNumberDecimal(event) {
   }
 
   
-  
-
-
-
-
 
 /** guinness price graph
  * - capture the entry and create 2 id: name:real, name:wished
  * - create let(real) + let(wished random numbers) / id(random participants) 
  * - display 4 bars with (xusers + name)real and (xusers + name) wished price
  */
+
+function guinnessGraph () {
+  
+}
 
 /**vitamin research graph
  * - capture the element clicked
