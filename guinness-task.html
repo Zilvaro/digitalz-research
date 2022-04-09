@@ -40,20 +40,21 @@
         <h3 class="task-subtitle" id="guinness-task-subtitle">“Please let us know your impression and expectations on
             the Guinness pricing.”</h3>
         
-        <form class="number-input-form" id="guinness-input-form">
+        <form class="number-input-form" id="guinness-input-form" onsubmit="guinnessGraph ()">
             <div class="question-box" id="guinness-question1">
                 <label class="var1 number-input-label" for="bar-price">Do you remember how much is a pint of Guinness in your favourite pub? Input that
                     price</label>
-                <input class="var1 number-input" id="bar-price" type="number" onchange="setTwoNumberDecimal" min="3.00" max="7.00"
+                <input class="var1 number-input" id="bar-price" name="bar-price" type="number" onchange="setTwoNumberDecimal" min="3.00" max="7.00"
                     step="0.10" value="0.00" required aria-label="Enter bar's price">
             </div>
             <div class="question-box" id="guinness-question2">
                 <label class="var1 number-input-label" for="my-price">Please, write what do you think should be a fair price of pint of Guinness in the
                     pubs?</label>
-                <input class="var1 number-input" id="bar-price" type="number" onchange="setTwoNumberDecimal" min="3.00" max="7.00"
+                <input class="var1 number-input" id="my-price" name="my-price" type="number" onchange="setTwoNumberDecimal" min="3.00" max="7.00"
                     step="0.10" value="0.00" required aria-label="Enter my price">
             </div>
             <input class="send-button" type="submit" value="Submit" aria-label="press to submit">
+            <p class="my-graph-name"></p>
         </form>
     </main>
     <div class="filler"></div>

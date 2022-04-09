@@ -32,13 +32,15 @@ function setTwoNumberDecimal(event) {
           Minutes: <span class="minutes"></span><br>
           Seconds: <span class="seconds"></span>
       </div>   
-   `
+   `;
+
    let taskAllow1 = document.getElementById('guinness-go');
-    taskAllow1.innerHTML = '<a href="../guinness-task.html"><i class="fa-solid fa-circle-chevron-right"></i></a>'
+    taskAllow1.innerHTML = '<a href="../guinness-task.html"><i class="fa-solid fa-circle-chevron-right"></i></a>';
    
    let taskAllow2 = document.getElementById('vitamins-go');
-    taskAllow2.innerHTML = '<a href="../vitamin-task.html"><i class="fa-solid fa-circle-chevron-right"></i></a>'
-   ;
+    taskAllow2.innerHTML = '<a href="../vitamin-task.html"><i class="fa-solid fa-circle-chevron-right"></i></a>';
+   
+    document.getElementsByClassName("my-graph-name").innerHTML = `${userName}`;
   
  
    // Put the above HTML in the response div below the form
@@ -107,9 +109,25 @@ function setTwoNumberDecimal(event) {
  * - display 4 bars with (xusers + name)real and (xusers + name) wished price
  */
 
+
+
 function guinnessGraph () {
+
+  let answerNumberGuinness = Math.floor(Math.random() *18) + 11;
+  let price1 = ((Math.random()*3) + 4.50).toFixed(1);
+  let price2 = ((Math.random()*2) + 4).toFixed(1);
+  
+   let answerPriceBar = price1 > price2 ? price1 : price2;
+   let answerPriceWish = price1 > price2 ? price2 : price1;
+    
+
+  let userName = nameForm.elements['username'].value;
+  let myPriceBar = guinness-input-form.elements['bar-price'].value;
+  let myPriceWish = guinness-input-form.elements['my-price'].value;
+
   
 }
+console.log(answerNumberGuinness);
 
 /**vitamin research graph
  * - capture the element clicked
