@@ -139,7 +139,7 @@ ul.breadcrumb li a:hover {
     width: 99%;
     height: 45vw;
     margin: 0 auto;
-    background-image: url(/assets/images/banner-lights.webp);
+    background-image: url(../images/banner-lights.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -240,11 +240,11 @@ ul.breadcrumb li a:hover {
 }
 
 #guinness-task-image {
-    background-image: url(/assets/images/guinness-full-photo.webp);
+    background-image: url(../images/guinness-full-photo.webp);
 }
 
 #vitamin-task-image {
-    background-image: url(/assets/images/gummies-image.webp);
+    background-image: url(../images/gummies-image.webp);
 }
 
 .task-subtitle {
@@ -349,23 +349,23 @@ ul.breadcrumb li a:hover {
 }
 
 #vitamin1-image {
-    background-image: url(/assets/images/ACW1-image.jpg);
+    background-image: url(../images/acw1-image.jpg);
 }
 
 #vitamin2-image {
-    background-image: url(/assets/images/ACW2-image.jpg);
+    background-image: url(../images/acw2-image.jpg);
 }
 
 #vitamin3-image {
-    background-image: url(/assets/images/ACW3-image.jpg);
+    background-image: url(/assets/images/acw3-image.jpg);
 }
 
 #vitamin4-image {
-    background-image: url(/assets/images/ACW4-image.jpg);
+    background-image: url(/assets/images/acw4-image.jpg);
 }
 
 #vitamin5-image {
-    background-image: url(/assets/images/ACW5-image.jpg);
+    background-image: url(/assets/images/acw5-image.jpg);
 }
 
 /* Count-down clock */
