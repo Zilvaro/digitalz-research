@@ -38,7 +38,7 @@ function setTwoNumberDecimal(event) {
     taskAllow1.innerHTML = '<a href="guinness-task.html"><i class="fa-solid fa-circle-chevron-right"></i></a>';
    
    let taskAllow2 = document.getElementById('vitamins-go');
-    taskAllow2.innerHTML = '<a href="../vitamin-task.html"><i class="fa-solid fa-circle-chevron-right"></i></a>';
+    taskAllow2.innerHTML = '<a href="vitamin-task.html"><i class="fa-solid fa-circle-chevron-right"></i></a>';
    
     document.getElementsByClassName("my-graph-name").innerHTML = `${userName}`;
   
