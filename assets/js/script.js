@@ -51,7 +51,7 @@ function handleSubmit(event) {
  * - when the time is elapsed, the task is replaced with task graph
  */
 
-const timeInMinutes = 10;
+const timeInMinutes = 2;
 const currentTime = Date.parse(new Date());
 const deadline = new Date(currentTime + timeInMinutes*60*1000);
 
@@ -108,9 +108,13 @@ function initializeClock(id, endtime) {
 
 
 
-function guinnessGraph() {
+function guinnessChart() {
+  
+  google.charts.load('current', {'packages':['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
 
-  let answerNumberGuinness = Math.floor(Math.random() * 18) + 11;
+
+let answerNumberGuinness = Math.floor(Math.random() * 18) + 11;
   let price1 = ((Math.random() * 3) + 4.50).toFixed(1);
   let price2 = ((Math.random() * 2) + 4).toFixed(1);
 
@@ -119,12 +123,38 @@ function guinnessGraph() {
 
 
   let userName = nameForm.elements['username'].value;
-  let myPriceBar = guinness - input - form.elements['bar-price'].value;
+  let myPriceBar = guinness-input-form.elements['bar-price'].value;
   let myPriceWish = guinness - input - form.elements['my-price'].value;
 
+  
+  function drawChart() {
+  
+  
+  let data = google.visualization.arrayToDataTable([
+    ['Contry', '€'],
+    ['Price in the bars',0],
+    ['Average', answerPriceBar],
+    ['You', 4.60],
 
-}
-console.log(answerNumberGuinness);
+    ['Desired Price', 0],
+    ['Average', answerPriceWish],
+    ['You', 3.75],
+  ]);
+  
+  let options = {
+    title:'Guinness Price Research, ' + answerNumberGuinness + ' answers'
+  };
+  
+  let chart = new google.visualization.BarChart(document.getElementById('myChart'));
+    chart.draw(data, options);
+  }
+  }
+
+
+
+
+
+
 
 /**vitamin research graph
  * - capture the element clicked
