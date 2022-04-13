@@ -2,6 +2,8 @@ function setTwoNumberDecimal(event) {
   this.value = parseFloat(this.value).toFixed(2);
 }
 
+
+
 /** guinness price graph
  * - capture the entry and create 2 id: name:real, name:wished
  * - create let(real) + let(wished random numbers) / id(random participants) 
