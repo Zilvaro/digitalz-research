@@ -135,13 +135,12 @@ ul.breadcrumb li a:hover {
 }
 
 
-/* index.html - Task box CSS*/
+/*Task box CSS*/
 .task-box-parent {
     width: 99%;
     height: 36vw;
-    margin: 2vw auto 0;
+    margin: 1vw auto;
     display: inline-block;
-    
 }
 
 .task-box {
@@ -157,6 +156,16 @@ ul.breadcrumb li a:hover {
 
 }
 
+/* Tasks-box images*/
+.task-image-box,
+#guinness-image {
+    background-image: url(../images/guinness-task-image.webp);
+}
+
+.task-image-box,
+#gummies-image {
+    background-image: url(../images/woman-eating-gummies.webp);
+}
 
 .task-text-box {
     width: 67%;
@@ -167,7 +176,7 @@ ul.breadcrumb li a:hover {
 }
 
 .text-box {
-    width: 95%;
+    width: 96%;
     height: 13vw;
     position: relative;
     top: 6vw;
@@ -176,26 +185,11 @@ ul.breadcrumb li a:hover {
     font-weight: 600;
 }
 
-.point-box {
-    width: 50%;
-    height: 6vw;
-    position: relative;
-    top: 7vw;
-    left: 2vw;
-    font-size: 4vw;
-    font-weight: 400;
-}
-
-.points-size {
-    font-size: 5vw;
-    font-weight: 700;
-}
-
 .fa-circle-chevron-right {
     color: #34495E;
     position: relative;
     font-size: 5vw;
-    top: 3vw;
+    top: 5vw;
     left: 70%;
 }
 
@@ -205,15 +199,163 @@ ul.breadcrumb li a:hover {
     background: green;
 }
 
-/* Tasks-box images*/
-.task-image-box,#guinness-image {
-    background-image: url(../images/guinness-task-image.webp);
+
+
+
+/*Task 'Number Input Form' CSS*/
+
+.task-points {
+    width: 95%;
+    height: 7vw;
+    font-size: 5vw;
+    text-decoration: underline;
+    text-align: right;
+    vertical-align: middle;
+    padding-bottom: 3vw;
 }
 
-.task-image-box, #gummies-image {
-    background-image: url(../images/woman-eating-gummies.webp);
+.task-point-value {
+    font-weight: 600;
+    color: #a80038;
 }
 
+.task-image {
+    width: 100%;
+    height: 66vw;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#guinness-task-image {
+    background-image: url(../images/guinness-full-photo.webp);
+}
+
+#vitamin-task-image {
+    background-image: url(../images/gummies-image.webp);
+}
+
+.task-subtitle {
+    width: 96%;
+    padding: 1vw;
+    text-align: center;
+    font-size: 3.5vw;
+    margin-bottom: 8vw;
+}
+
+.question-box {
+    width: 100%;
+    margin-bottom: 4vw;
+}
+
+.var1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.number-input-label {
+    width: 70%;
+    height: auto;
+    font-size: 3vw;
+    font-weight: 400;
+    position: relative;
+    left: 6%;
+}
+
+.number-input {
+    width: 10%;
+    height: 4.5vw;
+    font-size: 2.5vw;
+    padding-left: 1vw;
+    position: relative;
+    left: 10%;
+}
+
+.send-button {
+    width: 20%;
+    height: 5vw;
+    margin: 0 auto;
+    margin-top: 8vw;
+    border-radius: 2px;
+    padding: 10px auto;
+    text-align: center;
+    font-size: 3vw;
+    background-color: #305932;
+    color: #fafafa;
+    display: block;
+}
+
+.send-button:hover {
+    background-color: #fafafa;
+    color: #305932;
+    font-weight: 600;
+}
+
+.filler {
+    width: 100%;
+    height: 4rem;
+    clear: both;
+    background-color: transparent;
+}
+
+/*Task 'Radio Input Form' CSS*/
+
+.radio-question-box {
+    width: 100%;
+    margin-bottom: 4vw;
+}
+
+.var2 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.radio-input {
+    width: 3vw;
+    height: 3vw;
+    position: relative;
+    left: 15%;
+}
+
+.radio-label {
+    width: 50%;
+    height: 4vw;
+    font-size: 3vw;
+    position: relative;
+    left: 15%;
+}
+
+.radio-image {
+    width: 30vw;
+    height: 30vw;
+    background-color: #fafafa;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    left: 2%;
+}
+
+#vitamin1-image {
+    background-image: url(../images/acw1-image.jpg);
+}
+
+#vitamin2-image {
+    background-image: url(../images/acw2-image.jpg);
+}
+
+#vitamin3-image {
+    background-image: url(../images/acw3-image.jpg);
+}
+
+#vitamin4-image {
+    background-image: url(../images/acw4-image.jpg);
+}
+
+#vitamin5-image {
+    background-image: url(../images/acw5-image.jpg);
+}
 
 /* Count-down clock */
 
@@ -225,6 +367,7 @@ ul.breadcrumb li a:hover {
 }
 
 #clockdiv {
+    display: none;
     width: 100%;
     height: 5vw;
     background-color: #34495E;
@@ -235,3 +378,55 @@ ul.breadcrumb li a:hover {
     margin: 0 auto;
     
 }
+
+
+ /*My Chart*/
+
+ #myChart {
+     width: 100%;
+     height: 35vw;
+     max-width: 85;
+     margin: 0 auto;
+ }
+#link-gummies {
+    width: 100%;
+    height: 10vw;
+    
+}
+
+ .task-links {
+     display: inline-block;
+     width: 30%;
+     height: 3vw;
+     border-radius: 2px;
+     text-decoration-color: none;
+     color: #fafafa;
+     background-color: #305932;
+     font-size: x-large;
+     text-align: center;
+     margin-top: 7vw;
+    }
+ 
+.task-links a {
+    color: #fcfbfa;
+    text-decoration: none;
+    
+}
+
+
+.button-left {
+    position: relative;
+    float: left;
+    margin-left: 5vw;
+    text-decoration: none;
+    color: #a80038;
+}
+
+.button-right {
+    position: relative;
+    float: right;
+    margin-right: 5vw;
+}
+
+
+ 
