@@ -34,6 +34,7 @@ function handleSubmit(event) {
   taskAllow2.innerHTML = '<a href="vitamin-task.html"><i class="fa-solid fa-circle-chevron-right"></i></a>';
 
   document.getElementsByClassName("my-graph-name").innerHTML = `${userName}`;
+  localStorage.setItem("myName", `${userName}`);
 
   let responseDiv = document.getElementById('task-main-banner');
   responseDiv.innerHTML = html;

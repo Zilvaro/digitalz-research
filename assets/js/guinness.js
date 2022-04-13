@@ -26,7 +26,7 @@ let answerNumberGuinness = Math.floor(Math.random() * 18) + 11;
   let answerPriceWish = price1 > price2 ? price2 : price1;
 
 
-  let userName = nameForm.elements['username'].value;
+  let userName = localStorage.getItem("myName");
   let myPriceBar = guinness-input-form.elements['bar-price'].value;
   let myPriceWish = guinness - input - form.elements['my-price'].value;
 
@@ -38,7 +38,7 @@ let answerNumberGuinness = Math.floor(Math.random() * 18) + 11;
     ['Contry', '€'],
     ['Price in the bars',0],
     ['Average', answerPriceBar],
-    ['You', 4.60],
+    ['userName[0]', 4.60],
 
     ['Desired Price', 0],
     ['Average', answerPriceWish],
