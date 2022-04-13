@@ -7,24 +7,31 @@
  * - create a graph showing the bottle pictures and the % of answers
  */
 
- google.charts.load('current', {'packages':['corechart']});
- google.charts.setOnLoadCallback(drawChart);
- 
- function drawChart() {
- var data = google.visualization.arrayToDataTable([
-   ['Contry', 'Mhl'],
-   ['Italy',54.8],
-   ['France',48.6],
-   ['Spain',44.4],
-   ['USA',23.9],
-   ['Argentina',14.5]
- ]);
- 
- var options = {
-   title:'World Wide Wine Production',
-   is3D:true
- };
- 
- var chart = new google.visualization.PieChart(document.getElementById('myChart2'));
-   chart.draw(data, options);
- }
+google.charts.load('current', { 'packages': ['corechart'] });
+google.charts.setOnLoadCallback(drawChart);
+
+let answerNumberVitamins = Math.floor(Math.random() * 56) + 40;
+    let num1 = Math.floor(Math.random() * 25);
+    let num2 = Math.floor(Math.random() * (100-num1));
+    let num3 = Math.floor(Math.random() * (100-num1-num2));
+    let num4 = Math.floor(Math.random() * (100-num1-num2-num3));
+    let num5 = 100-num1-num2-num3-num4;
+
+function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+        ['Contry', '% of answers'],
+        ['Essential Elements', num1],
+        ['Garden of Life', num2],
+        ['Viva Naturals', num3],
+        ['Natures Craft', num4],
+        ['New Nordic', num5]
+    ]);
+
+    var options = {
+        title: 'Best appreciated package, ' + answerNumberVitamins + ' answers',
+        is3D: true
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('myChart2'));
+    chart.draw(data, options);
+}
