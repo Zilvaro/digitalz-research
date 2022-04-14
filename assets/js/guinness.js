@@ -14,10 +14,10 @@ function setTwoNumberDecimal(event) {
 
 function guinnessChart() {
   
-  google.charts.load('current', {'packages':['corechart','bar']});
+  google.charts.load('current', {'packages':['corechart']});
   google.charts.setOnLoadCallback(drawChart1);
-
-
+  google.charts.setOnLoadCallback(drawChart2);
+  
 let answerNumberGuinness = Math.floor(Math.random() * 56) + 20;
 
 let respondents = document.getElementById('numberRespondents');
@@ -39,21 +39,36 @@ let respondents = document.getElementById('numberRespondents');
   
   function drawChart1() {
   
-  
-  let dataBar = google.visualization.arrayToDataTable([
-    ['Results', '€'],
-    ['Average',0],
-    ['Your answer', answerPriceBar],
-    ['My answer', answerPriceWish],
-  ]);
+    var dataBar = google.visualization.arrayToDataTable([
+      ['Results', '€'],
+      ['"Official" in Dublin', 4.96],
+      ['Average, all respondents', answerPriceBar],
+      ['You', answerPriceWish],
+    ]);
+    
   
   let optionsBar = {
-    title:'Guinness Price in bars, '
+    title:'Guinness (pint) Price in bars, '
   };
   
   let chart = new google.visualization.ColumnChart(document.getElementById('chartBar'));
     chart.draw(dataBar, optionsBar);
   }
   
-  
+
+function drawChart2() {
+var dataWish = google.visualization.arrayToDataTable([
+  ['Results', '€'],
+  ['Cheapest @ "Kerry" pub', 3.90],
+  ['Average "Wish price"', answerPriceWish],
+  ['Your Wish', answerPriceWish],
+]);
+
+var optionsWish = {
+  title:'Guinness (pint) "Wish" Price'
+};
+
+var chart = new google.visualization.ColumnChart(document.getElementById('chartWish'));
+  chart.draw(dataWish, optionsWish);
+}
 }
