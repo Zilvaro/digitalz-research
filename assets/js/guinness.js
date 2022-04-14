@@ -10,9 +10,7 @@ function setTwoNumberDecimal(event) {
  * - display 4 bars with (xusers + name)real and (xusers + name) wished price
  */
 
-function linkChart() {
-  window.location.href="https://zilvaro.github.io/digitalz-research/guinness-chart.html";
-}
+
 
 function guinnessChart() {
   
