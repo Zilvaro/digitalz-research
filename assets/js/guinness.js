@@ -11,7 +11,7 @@ function setTwoNumberDecimal(event) {
  */
 
 function linkChart() {
-  window.location.href="https://zilvaro.github.io/digitalz-research/guinness-chart.html"
+  window.location.href="https://zilvaro.github.io/digitalz-research/guinness-chart.html";
 }
 
 function guinnessChart() {
