@@ -14,11 +14,17 @@ function setTwoNumberDecimal(event) {
 
 function guinnessChart() {
   
-  google.charts.load('current', {'packages':['corechart']});
-  google.charts.setOnLoadCallback(drawChart);
+  google.charts.load('current', {'packages':['corechart','bar']});
+  google.charts.setOnLoadCallback(drawChart1);
 
 
-let answerNumberGuinness = Math.floor(Math.random() * 18) + 11;
+let answerNumberGuinness = Math.floor(Math.random() * 56) + 20;
+
+let respondents = document.getElementById('numberRespondents');
+  respondents.innerHTML = answerNumberGuinness + ' answer(s)';
+
+
+
   let price1 = ((Math.random() * 3) + 4.50).toFixed(1);
   let price2 = ((Math.random() * 2) + 4).toFixed(1);
 
@@ -31,38 +37,23 @@ let answerNumberGuinness = Math.floor(Math.random() * 18) + 11;
   let myPriceWish = guinness - input - form.elements['my-price'].value;
 
   
-  function drawChart() {
+  function drawChart1() {
   
   
-  let data = google.visualization.arrayToDataTable([
-    ['Contry', '€'],
-    ['Price in the bars',0],
-    ['Average', answerPriceBar],
-    ['userName[0]', 4.60],
-
-    ['Desired Price', 0],
-    ['Average', answerPriceWish],
-    ['You', 3.75],
+  let dataBar = google.visualization.arrayToDataTable([
+    ['Results', '€'],
+    ['Average',0],
+    ['Your answer', answerPriceBar],
+    ['My answer', answerPriceWish],
   ]);
   
-  let options = {
-    title:'Guinness Price Research, ' + answerNumberGuinness + ' answers'
+  let optionsBar = {
+    title:'Guinness Price in bars, '
   };
   
-  let chart = new google.visualization.BarChart(document.getElementById('myChart'));
-    chart.draw(data, options);
+  let chart = new google.visualization.ColumnChart(document.getElementById('chartBar'));
+    chart.draw(dataBar, optionsBar);
   }
-  }
-
-
-
-
-
-
-
-/**vitamin research graph
- * - capture the element clicked
- * - create 5 random results (sum=100%) 
- * - create the random number of #total answers  
- * - create a graph showing the bottle pictures and the % of answers
- */
+  
+  
+}
