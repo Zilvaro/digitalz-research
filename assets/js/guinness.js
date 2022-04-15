@@ -44,31 +44,34 @@ let priceForm = document.getElementById('guinness-submit');
 
 
     let dataBar = google.visualization.arrayToDataTable([
-      ['Results', '€'],
-      ['"Official" in Dublin', 4.96],
-      ['Average, all answers', answerPriceBar],
-      ['You', myBarPrice],
+      ['Results', '€', { role: 'style' }],
+      ['"Official" in Dublin', 4.96, '#b87333'],
+      ['Average, all answers', answerPriceBar, '#305932'],
     ]);
 
 
     let optionsBar = {
-      title: 'Guinness (pint) Price in bars, '
+      title: 'Guinness (pint) Price in bars, ',
+      hAxis: {title: 'Average, all answers',  color: '#333'},
+      vAxis: {minValue: 0, maxValue: 7},
     };
 
+    
     let chart = new google.visualization.ColumnChart(document.getElementById('chartBar'));
     chart.draw(dataBar, optionsBar);
   }
 
   function drawChart2() {
     let dataWish = google.visualization.arrayToDataTable([
-      ['Results', '€'],
-      ['Cheapest @ "Kerry" pub', 3.90],
-      ['Average "Wish price"', answerPriceWish],
-      ['Your Wish', 4],
+      ['Results', '€', { role: 'style' }],
+      ['Cheapest @ "Kerry" pub', 3.90, '#b87333'],
+      ['Average "Wish price"', answerPriceWish, '#305932'],
     ]);
 
     let optionsWish = {
-      title: 'Guinness (pint) "Wish" Price'
+      title: 'Guinness (pint) "Wish" Price',
+      hAxis: {title: 'Average, all answers',  color: '#333'},
+      vAxis: {minValue: 0, maxValue: 7},
     };
 
     let chart = new google.visualization.ColumnChart(document.getElementById('chartWish'));
