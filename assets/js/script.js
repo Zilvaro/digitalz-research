@@ -98,7 +98,7 @@ function initializeClock(id, endtime) {
 
 /**Exit script & message */
 
-function exitFunction(event) {
+function exitFunction() {
 
   let url = "https://zilvaro.github.io/digitalz-research/index.html";
   window.location(url);
