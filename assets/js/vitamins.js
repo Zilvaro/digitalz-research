@@ -7,6 +7,8 @@
  * - create a graph showing the bottle pictures and the % of answers
  */
 
+ function vitaminChart() {
+
 google.charts.load('current', { 'packages': ['corechart'] });
 google.charts.setOnLoadCallback(drawChart);
 
@@ -35,3 +37,5 @@ function drawChart() {
     var chart = new google.visualization.PieChart(document.getElementById('myChart2'));
     chart.draw(data, options);
 }
+ }
+

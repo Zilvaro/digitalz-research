@@ -14,6 +14,7 @@ function handleSubmit(event) {
 
   let userName = nameForm.elements['username'].value;
 
+
   let html = `
       <div class="main-banner-box" id="banner-box-text">
         <h2 id="greeting-text">Good luck ${userName}!</h2>
@@ -94,3 +95,26 @@ function initializeClock(id, endtime) {
   let timeinterval = setInterval(updateClock, 1000);
 }
 
+
+/**Exit script & message */
+
+function exitFunction(event) {
+
+  let url = "https://zilvaro.github.io/digitalz-research/index.html";
+  window.location(url);
+
+  let html = `
+      <div class="main-banner-box" id="banner-box-text">
+        <h2 id="greeting-text">Sorry to see you leaving ${userName}:(</h2>
+        <h3 id="start-again-text">If you want to start again, press on DigitalZ logo</h3>
+      <div class="main-banner-box" id="timer-box">
+        <div id="clockdiv">
+          Days: <span class="days"></span><br>
+          Hours: <span class="hours"></span><br>
+          Minutes: <span class="minutes"></span><br>
+          Seconds: <span class="seconds"></span>
+      </div>   
+      <div class="task-box-parent"></div>
+   `;
+
+}
