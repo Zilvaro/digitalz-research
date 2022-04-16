@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,11 @@
     <meta name="description" content="my tasks, question, vitamins">
     <meta name="author" content="digital-case">
     <title>Brand Insights</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/tasks.css">
 </head>
@@ -39,14 +43,15 @@
         <h3 class="task-subtitle" id="guinness-task-subtitle">“If all the ingredients and dosages are identical, which
             packaging of the Apple Cider Vinegar gummies is the most appealing to you? You can mark ONLY BEST ONE in
             your opinion:”</h3>
-        
 
-            <div id="vitamin2-image"></div>
+
+        <div id="vitamin2-image"></div>
         <form class="radio-input-form" id="vitamin-input-form" action="vitamin-chart.html">
             <div class="radio-question-box" id="vitamins-question1">
                 <input class="var2 radio-input" id="product1" type="radio" name="brand" value="Essential Elements">
                 <label class="var2 radio-label" for="product1">Essential Elements</label>
-                <div class="var2 radio-image" id="vitamin1-image" title="ACW Essential Elements vitamins bottle"></div><br>
+                <div class="var2 radio-image" id="vitamin1-image" title="ACW Essential Elements vitamins bottle"></div>
+                <br>
             </div>
             <div class="radio-question-box" id="vitamins-question2">
                 <input class="var2 radio-input" id="product2" type="radio" name="brand" value="Garden of Life" checked>
@@ -68,7 +73,7 @@
                 <label class="var2 radio-label" for="product5">New Nordic</label>
                 <div class="var2 radio-image" id="vitamin5-image" title="ACW New Nordic vitamins bottle"></div>
             </div>
-            
+
             <input class="send-button" id="vitamin-submit" type="submit" value="Submit" aria-label="press to submit">
         </form>
     </main>
