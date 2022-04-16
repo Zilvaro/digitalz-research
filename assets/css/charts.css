@@ -464,7 +464,7 @@ ul.breadcrumb li a:hover {
 }
 
 .button-right {
-    width: 20;
+    width: 20vw;
     height: 5vw;
     position: relative;
     float: right;
