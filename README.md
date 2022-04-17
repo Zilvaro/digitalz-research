@@ -304,57 +304,21 @@ There were several bugs/issues with:
 ## Performance Testing
 [Go to the top](#table-of-contents)
 
-Test was performed Chrome-Developer tools-Lighthouse test for all pages in mobile and desktop version. Some problems initially were on the home-page and privacy-policy pages.
+Chrome-Developer tools-Lighthouse was performed for all pages to evaluate Performance, Accessibility, Best Practices and SEO status. No major issues found.
 
 
 ### Home page
+### Tasks
 [Go to the top](#table-of-contents)
 
-The performance was on the low side mainly due to the size of the images. By resizing all of them and changing the format to AVIF or WebP, the issue was fixed. To learn more about the correct formats (transparency was needed on one of the images), avif.io/blog/comparisons/avif-vs-png/ information was used.
+![home-lighthouse-test](/assets/readme-assets/lighthouse-index500.jpg)
+![task-lighthouse-test](/assets/readme-assets/lighthouse-guinness-task500.jpg
 
-![home-initial-test](./readme-assets/lighthouse-home-initial-test.JPG)
-![home-fixed-test](./readme-assets/lighthouse-home-fixed-test.JPG)
-
-
-### Info / Privacy Policy
+### Charts
 [Go to the top](#table-of-contents)
 
-The second most problematic page was Privacy Policy. It was mainly to incorrect syntax at the end of 2 li (list) lines. It was also added the meta-description and alt-attributes to the anchor elements.
-
-![privacy-initial-test](./readme-assets/lighthouse-privacy-initial-test.JPG)
-![privacy-fixed-test](./readme-assets/lighthouse-privacy-fixed-test.JPG)
-
-
-### Info-main page
-[Go to the top](#table-of-contents)
-
-No major issues
-
-![info-test](./readme-assets/lighthouse-info-blog-test.JPG)
-
-
-### Contact Form
-[Go to the top](#table-of-contents)
-
-No major issues
-
-![contact-test](./readme-assets/lighthouse-contact-test.JPG)
-
-
-### Profile page
-[Go to the top](#table-of-contents)
-
-No major issues
-
-![profile-test](./readme-assets/lighthouse-profile-test.JPG)
-
-
-### MyTasks page
-[Go to the top](#table-of-contents)
-
-No major issues
-
-![myTasks-test](./readme-assets/lighthouse-myTasks-test.JPG)
+![guinness-chart-lighthouse-test](/assets/readme-assets/lighthouse-guinness-graph500.jpg)
+![vitamins-chart-lighthouse-test](/assets/readme-assets/lighthouse-vitamins-graph500.jpg)
 
 
 
@@ -364,12 +328,10 @@ No major issues
 
 The site was deployed to GitHub pages using the following steps:
 - Sign up to GitHub
-- Create a new repository on GitHub.
 - Click on settings on the navigation bar under the repository title.
 - Select pages on the left menu bar.
 - Click on the master branch and save.
-- This will now generate a link with your website live.
-- The live link can be found here - https://zilvaro.github.io/my-digitalz/
+- The live link created by Github - https://zilvaro.github.io/digitalz-research/
 
 
 
@@ -378,7 +340,7 @@ The site was deployed to GitHub pages using the following steps:
 # 6.Acknowledgement
   [Go to the top](#table-of-contents)
 
-- For README.md file/Deployment section, reference of github.com/iKelvvv/MS1 was considered.
+- For README.md file/Deployment section, reference of github.com/josswe26/rpsls was considered.
 - The code was created by developer with some theory and concepts explanations by W3C and HubSpot blog.
 - The texts were created by developer with pictures sourced from unsplash.com
 
