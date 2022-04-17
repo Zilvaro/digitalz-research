@@ -5,15 +5,20 @@
 # Welcome!
 
 
-The idea is to develop a digital solution for SME or non-profits where they can, without any investment into development or licenses, equip themselves with crowdfunding, crowdsourcing, and e-commerce tools to run and grow their business. It has been my experience from the last 7 years that such solution would be very relevant and in demand (one of the potential clients would be "DKIRU", starting field operation in Mexico). This thought is supported by 2021-2027 EU initiative #AStrongerigitalEurope where the aim is to dramatically increase the use of digital tools and data usage for the growth of Small & Medium Enterprises (SMEs).
+It is critical for many businesses to share to & to collect an information from the business partners: market info about the brands and prices, training material understanding, different technical parameters, etc. 
+The designed “Tasking Module” can be used as independent engagement tool or API integrated to a company’s mobile website and demonstrates the:
+  - practical app implementation for sales & marketing activities to collect some critical information about the perceived value of brands and designs
+  - JavaScript implementation via:
+  	- dynamic page-rendering,
+  	- sign-in feature and countdown timer
+  	- various data generation and visual chart display
+  	- several control and notification features.
 
-Typically, a start-up, a small company or an association have a great idea, publish Facebook or business website and even connect to an e-commerce solution. However, the engagement from the business partners remains very low, because many tools are passive and you have to use several of them (WhatsApp, Facebook, Kickstarter, Shopify and a few more) to achieve the business impact. DigitalZ should be an unifying platform with several unique features that satisfy most of the business engagement needs in one platform.
 
-The working version of the mobile-web pages (static several pages, made with html & CSS) can be found [here](https://zilvaro.github.io/my-digitalz/index.html).
+The working version of the Tasking Module mobile-web pages can be found [here](https://zilvaro.github.io/digitalz-research/).
 
-![website preview](/assets/readme-assets/digitalz-app-images.jpg)
+![website preview](assets/readme-assets/responsive-home.JPG)
 
-This project is the HTML and CSS based functional core structure of the solution that works as a teaser and allows people to request more information. By adding more elements in JavaScript and Python later it will become more functional, easier-to-use, and beneficial for different users.
 
 
 
@@ -26,10 +31,9 @@ This project is the HTML and CSS based functional core structure of the solution
   -	[1.3 Color Scheme](#color-scheme)
   - [1.4 Structure (Flow)](#wire-flow)
     - [Wireframes](#wireframes)
-    - [Site-map](#wire-site-map)
     - [Home-page](#wire-home)
-    - [Info-blog](#wire-info)
-    - [Contact-registration](#wire-contact)
+    - [Tasks](#wire-tasks)
+    - [Insights](#wire-charts)
 
       
 [2. Features](#features)
@@ -69,21 +73,21 @@ This project is the HTML and CSS based functional core structure of the solution
 [Go to the top](#table-of-contents)
 
 While designing the functionality & user experience there were applied some guiding principles:
-- 5-seconds rule: it has to be clear what the page is for in 5s (e.g. is it just for information, to perform an activity or leave a comment) and where to go next
-- 2 clicks rule: user shall get to any core functionality (perform a task, order product, check the points balance, leave a message. etc.) by maximum two browsing/clicking steps.  
-- call-to-action: at every page or stage there is an invitation "to do something" (contact, order, donate, perform a task or follow to instruction section).
-- consistency: every page has the same color scheme, similar structure, button design and follows a common practice of app design (OK buttons - green, main page - home, settings - in profile, etc.).
+- 5-seconds rule: it has to be clear what the page is for in 5s (e.g. is it just for information, to sign-in or to perform an activity) and where to go next.
+- forward-flow rule: even though a possibility to go back (to home page) exists, user shall move forward from every page. This is important to maintain user’s focus and interest, also to increase app’s usability by lowering # of clicks.
+- consistency: every page has the same color scheme, similar structure, button design and follows a common practice of app design (OK buttons - green, main page - home, etc.).
 
 The screen-max-width is set for 1100px to keep all the items in proportion. To keep all elements visually complete and related to each other, a light background was added that is always responsive to full screen size (not only up to 1100px).
+
 
 
 <a name="personas"></a>
 ## 1.2 Personas
 [Go to the top](#table-of-contents)
 
-**Alex** : 25 years old sustainable business owner. He is promoting reusability and sharing, so he provides refillable containers for food products, supplies quality produce from different parts of the world and organizes communal workshops about circular economy. In addition to his Facebook and Instagram accounts he would like to have an application where he can check the display and stock level in partner stores, activate on-line store and run continuous crowdfunding activities to support the business.  
+**Juan** : 22 years old active student who volunteers in different events, tries to learn new things by taking internships at multinational companies. In addition to his Facebook and Instagram accounts he would like to have an application where he can run continuous crowdfunding activities to support his studies.  
 
-**Marion** : 42 years old grocery store manager that is looking how to improve the sales and make extra revenues for additional services. She is busy at the store, so is not in favour with visiting salesmen and merchandizers so for her the contractual tasks and communication with suppliers would be ideal if they happen at her own schedule. And possibility to have a personalized discount on supplies or extra revenue from performing some merchandising services would be very appreciated.
+**Lilly** : 39 years old office employee that is passionate about sustainability, nice looking brands and living environment and is willing to help other people to create something fun and useful. From time to time she is participating in different contest or opinion surveys organinez by brands and communities.
 
 
 <a name="color-scheme"></a>
@@ -94,8 +98,7 @@ The idea of the solution is that ad-banners, product pictures or story-images wi
 
 With the help of https://www.color-hex.com/color-palettes/ DigitalZ has the color combination that guaranties sufficient contrast, readability and enough supporting colors to be engaging:
 
-![color scheme](./readme-assets/digitalz-color-scheme-small.jpg)
-
+![color scheme](/assets/readme-assets/color-scheme.jpg)
 
 Font-family is a standard one, that looks great on multiple browsers: **'Segoe UI', sans-serif**.
 
@@ -109,45 +112,33 @@ Font-family is a standard one, that looks great on multiple browsers: **'Segoe U
 ### Wireframes
 [Go to the top](#table-of-contents)
 
-To visualize the ideas and define the priorities for the development BALSAMIQ tool was used. At first, larger (not full) site architecture was created, then prioritized what would be possible to do just with html and CSS, but already be a functional site and give a solid structure for the next upgrades.
+To visualize the ideas and define the priorities for the development BALSAMIQ tool was used. At first, larger (not full) site architecture was created, then prioritized what would be possible to do in a given time-frame, but already be a functional site and give a solid structure for the next upgrades.
 
-It was designed with both personas' interests in mind:
-- on the home-page: advertising banners & money making actions - tasking & e-store (currently replaced by Contact link)
-- within advertising/info pages: promo or instructional materials with a link to action
-- contact page: it is a form for giving the possibility to contact the solution operator and collecting info about the user (before proper log-in/sign-up form is developed)
-
-Then, the concept pages for mobile and wide-screen were designed:
-
-
-<a name="wire-site-map"></a>
-### Site-map
-[Go to the top](#table-of-contents)
-
-![Site Map](./readme-assets/DigitalZ-wire-flow-small.jpg)
-
+The concept pages:
 
 <a name="wire-home"></a>
 ### Home-page
 [Go to the top](#table-of-contents)
 
-![home balsamiq page-mobile](./readme-assets/Digi-home-v1-mobile-small.jpg)
-![home balsamiq page-widescreen](./readme-assets/Digi-home-v1-widescreen-small.jpg)
+![home balsamiq page](/assets/readme-assets/home-page-mobile-s.webp)
+![home-signed balsamiq page](/assets/readme-assets/home-page-mobile-signed-s.webp)
+![home-exit balsamiq page](/assets/readme-assets/home-page-mobile-exit-s.webp)
 
 
-<a name="wire-info"></a>
-### Info-blog
+<a name="wire-tasks"></a>
+### Tasks
 [Go to the top](#table-of-contents)
 
-![balsamiq info-mobile](./readme-assets/Digi-info-articles-v1-mobile-small.jpg)
-![balsamiq info-widescreen](./readme-assets/Digi-info-articles-v1-widescreen-small.jpg)
+![balsamiq guinness-task](/assets/readme-assets/home-page-task1-s.webp)
+![balsamiq vitamins-taskn](/assets/readme-assets/home-page-task2-s.webp)
 
 
-<a name="wire-contact"></a>
-### Contact-registration
+<a name="wire-charts"></a>
+### Insights
 [Go to the top](#table-of-contents)
 
-![balsamiq contact-mobile](./readme-assets/Digi-contact-v2-mobile.jpg)
-![balsamiq contact](./readme-assets/Digi-contact-v1-widescreen-.jpg)
+![balsamiq charts](/assets/readme-assets/home-page-results-s.webp)
+
 
 
 
