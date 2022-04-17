@@ -128,7 +128,7 @@ The concept pages:
 [Go to the top](#table-of-contents)
 
 ![balsamiq guinness-task](/assets/readme-assets/home-page-task1-s.webp)
-![balsamiq vitamins-taskn](/assets/readme-assets/home-page-task2-s.webp)
+![balsamiq vitamins-task](/assets/readme-assets/home-page-task2-s.webp)
 
 
 <a name="wire-charts"></a>
@@ -179,7 +179,7 @@ MyTasks section is ask the user for an opinion, insight about the brand, the mar
 
 
 ![task-guinness](/assets/readme-assets/responsive-guinness-task500.jpg) 
-![task-vitamins](/assets/readme-assets/responsive-vitamin-task500.jpg
+![task-vitamins](/assets/readme-assets/responsive-vitamin-task500.jpg)
 
 
 <a name="charts"></a>
@@ -312,7 +312,7 @@ Chrome-Developer tools-Lighthouse was performed for all pages to evaluate Perfor
 [Go to the top](#table-of-contents)
 
 ![home-lighthouse-test](/assets/readme-assets/lighthouse-index500.jpg)
-![task-lighthouse-test](/assets/readme-assets/lighthouse-guinness-task500.jpg
+![task-lighthouse-test](/assets/readme-assets/lighthouse-guinness-task500.jpg)
 
 ### Charts
 [Go to the top](#table-of-contents)
