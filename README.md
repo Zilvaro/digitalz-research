@@ -219,9 +219,11 @@ Those features could be used to enhance user experience and collect more behavio
 <a name="languages-used"></a>
 ## Languages Used
 
-- HTML5 (markup language) was used for structuring and presenting content of the website.
+- HTML5 
 
-- CSS3 (Cascading Style Sheets) was used to provide the style to the content written in a HTML.
+- CSS3 
+
+- JavaScript
 
 
 <a name="programs-used"></a>
@@ -233,6 +235,8 @@ Those features could be used to enhance user experience and collect more behavio
 
 - Font Awesome was used to import icons.
 
+- Am I Responsive was used to generate mockup imagery for ReadMe file.
+
 - Chrome was used to test the source code using HTML5 and responsiveness.
 
 - GitHub was used to create the repository and to store the project's code.
@@ -243,9 +247,13 @@ Those features could be used to enhance user experience and collect more behavio
 
 - W3C Markup and Jigsaw validation tools were used to validate the HTML code and CSS style used in the project.
 
-- Looka was used to generate the DigitalZ logo design
+- JSHints JavaScript Code Quality Tool was used to validate the site's JavaScript code.
 
-- Unsplash.com was used to choose the images for the website
+- Favicon-generator.org was used to create the site favicon.
+
+- Looka was used to generate the DigitalZ logo design.
+
+- Unsplash.com was used to choose the images for the website.
 
 
 
@@ -253,12 +261,12 @@ Those features could be used to enhance user experience and collect more behavio
 # 4.Testing
 [Go to the top](#table-of-contents)
 
-The W3C Markup Validator, W3C CSS Validator and W3C Link Checker were used to validate every page and links of the project to ensure there were no syntax errors in the project.
+The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate every page, links and  JavaScript code of the project to ensure there were no syntax errors in the project.
 
-![W3C-html-validation](./readme-assets/digitalz-html-validator.JPG)
-![W3C-css-validation](./readme-assets/digitalz-css-validator.JPG)
-![W3C-links-checker](./readme-assets/w3-link-checker.JPG)
 
+![W3C-html-validation](/assets/readme-assets/nu-html-checker500.jpg)
+![W3C-css-validation](/assets/readme-assets/W3C-CSS-validation500.jpg)
+![JShint-validation](/assets/readme-assets/jshint-test.JPG)
 
 <a name="flow-testing"></a>
 ## Flow Testing
@@ -276,23 +284,20 @@ Each of the pages were tested for
 2. all images and texts are clear, readable and are not distorted on different screens
 3. all links to other pages work 
 4. accessibility (clarity of the page and next steps)
-5. external links open in new tab and
+5. code executes what it suppose to
 6. the flow in general 
 
 ALL tests PASSED.
 
-Plus, it was tested the form (Contact) functionality (if it checks the correct inputs and submits the values entered):
-
-![form-wrong-field](./readme-assets/contact-wrongfield-small.jpg)
-![form-values-submission](./readme-assets/form-fill-test-small.jpg)
-
 
 ---
 
-One bug was observed in the MyTask page with incorrect block alignment (the bottom div-block was hidden beneath the top one). It was fixed by using Chrome Developer tool and removing position:absolute :
+There were several bugs/issues with:
 
-![MyTask-bug-display](./readme-assets/my-tasks-testbug.JPG)
-![MyTask-fixed-display](./readme-assets/my-tasks-fixed.JPG)
+ - missing images and 404 error on the published website: issues related with wrong paths assignment fixed
+ - responsive design including google-charts: fixed with CSS measurements and positioning manipulations
+ - some functions were not executing as expected: problems fixed by changing global variables into local
+
 
 
 <a name="performance-testing"></a>
