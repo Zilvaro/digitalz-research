@@ -52,7 +52,6 @@ let priceForm = document.getElementById('guinness-submit');
 
     let optionsBar = {
       title: 'Guinness (pint) Price in bars, ',
-      hAxis: {title: 'Average, all answers',  color: '#333'},
       vAxis: {minValue: 0, maxValue: 7},
     };
 
@@ -70,7 +69,6 @@ let priceForm = document.getElementById('guinness-submit');
 
     let optionsWish = {
       title: 'Guinness (pint) "Wish" Price',
-      hAxis: {title: 'Average, all answers',  color: '#333'},
       vAxis: {minValue: 0, maxValue: 7},
     };
 
