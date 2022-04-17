@@ -37,7 +37,7 @@ The working version of the Tasking Module mobile-web pages can be found [here](h
 
       
 [2. Features](#features)
-  - [2.1 Navigation](#navigation)
+  - [2.1 Sign-in & task activation](#sign-in)
   - [2.2 Banners/Images](#banners)
   -	[2.3 Info/Blog](#info)
   - [2.4 Contact/Registration](#contact)
@@ -147,24 +147,24 @@ The concept pages:
 [Go to the top](#table-of-contents)
 
 
-<a name="navigation"></a>
-## 2.1 Navigation
+<a name="sign-in"></a>
+## 2.1 Sign-in & task activation
 [Go to the top](#table-of-contents)
 
-To increase site's accessibility and clarity 4 navigation elements were used:
+To increase site's fun (gamification), several functions were used:
 
-1. Top-navigation menu for screens wider than 600px 
-2. Bottom-navigation menu for screens bellow 600px width. Bottom nav is in the fixed-bottom position to be always accessible. 
-3. Middle page 2-button selection on the home-screen to core action-features: tasking & e-store (currently replaced with Contact) 
-4. 'Breadcrumbs' on some internal pages with more related content (currently Info/article pages)
+1. Sign in with a name to be able to continue.  We use this name to welcome personally to the app. (In real life, I would use the name of app/user initial login instead of this place). 
+2. Countdown timer. It could be done between certain dates or for a set time, but I used random time between 2 & 10 minutes for the task completion. This is used lately to get a better understanding of users’ behaviour: do they answer faster under a pressure of the short timeframe or contrary, they just drop the app? This is also will be used to relate which tasks are picked-up first under time constraints.
+There is no penalty here if time expires since we still want user to do something, we just notify that allocated time has already expired. 
+3. Task activation. The task are not active (clickable) if the user name was not entered. After the submission, ‘click’ icons with a link appear on the task sections. 
+4. 'Breadcrumbs' on some internal pages with more related content (i.e. name of the task).
 
-On top-nav and bottom-nav a pseudo-element :hover applied to attract the attention to user-actions and possibilities.
 
 DigitalZ logo from each page always returns a user to the home-page.
 
-![navigation top & middle](./readme-assets/nav-top-middle-small.jpg) 
-![navigation bottom](./readme-assets/nav-bottom.JPG) 
-![navigation breadcrumbs](./readme-assets/nav-breadcrumbs.JPG)
+![responsive home page](/assets/readme-assets/responsive-home450.webp) 
+![signed-in home page](/assets/readme-assets/home-page-signed-mobile.webp) 
+![expired-time home page](/assets/readme-assets/home-page-expired-mobile.webp) 
 
 
 <a name="banners"></a>
