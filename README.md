@@ -5,7 +5,7 @@
 # Welcome!
 
 
-It is critical for many businesses to share to & to collect an information from the business partners: market info about the brands and prices, training material understanding, different technical parameters, etc. 
+It is critical for many businesses to share to & to collect from an information from the business partners: market info about the brands and prices, training material understanding, different technical parameters, etc. 
 The designed “Tasking Module” can be used as independent engagement tool or API integrated to a company’s mobile website and demonstrates the:
   - practical app implementation for sales & marketing activities to collect some critical information about the perceived value of brands and designs
   - JavaScript implementation via:
@@ -85,7 +85,7 @@ The screen-max-width is set for 1100px to keep all the items in proportion. To k
 
 **Juan** : 22 years old active student who volunteers in different events, tries to learn new things by taking internships at multinational companies. In addition to his Facebook and Instagram accounts he would like to have an application where he can run continuous crowdfunding activities to support his studies.  
 
-**Lilly** : 39 years old office employee that is passionate about sustainability, nice looking brands and living environment and is willing to help other people to create something fun and useful. From time to time she is participating in different contest or opinion surveys organinez by brands and communities.
+**Lilly** : 39 years old office employee that is passionate about sustainability, nice looking brands and living environment and is willing to help other people to create something fun and useful things. From time to time she is participating in different contests or opinion surveys organized by brands and communities.
 
 
 <a name="color-scheme"></a>
@@ -110,7 +110,7 @@ Font-family is a standard one, that looks great on multiple browsers: **'Segoe U
 ### Wireframes
 [Go to the top](#table-of-contents)
 
-To visualize the ideas and define the priorities for the development BALSAMIQ tool was used. At first, larger (not full) site architecture was created, then prioritized what would be possible to do in a given time-frame, but already be a functional site and give a solid structure for the next upgrades.
+To visualize the ideas and define the priorities for the development BALSAMIQ tool was used. At first, larger (not full) site architecture was created, then prioritized what would be possible to do in a given timeframe, but already be a functional site and give a solid structure for the next upgrades.
 
 The concept pages:
 
@@ -154,7 +154,7 @@ To increase site's fun (gamification), several functions were used:
 1. Sign in with a name to be able to continue.  We use this name to welcome personally to the app. (In real life, I would use the name of app/user initial login instead of this place). 
 2. Countdown timer. It could be done between certain dates or for a set time, but I used random time between 2 & 10 minutes for the task completion. This is used lately to get a better understanding of users’ behaviour: do they answer faster under a pressure of the short timeframe or contrary, they just drop the app? This is also will be used to relate which tasks are picked-up first under time constraints.
 There is no penalty here if time expires since we still want user to do something, we just notify that allocated time has already expired. 
-3. Task activation. The task are not active (clickable) if the user name was not entered. After the submission, ‘click’ icons with a link appear on the task sections. 
+3. Task activation. The task is not active (clickable) if the user name was not entered. After the submission, ‘click’ icons with a link appear on the task sections. 
 4. 'Breadcrumbs' on some internal pages with more related content (i.e. name of the task).
 
 
@@ -169,9 +169,9 @@ DigitalZ logo from each page always returns a user to the home-page.
 ## 2.2 Tasks
 [Go to the top](#table-of-contents)
 
-MyTasks section is ask the user for an opinion, insight about the brand, the market or test his/her knowledge, for example, about training materials or working policies. It usually has rigid structure:
+Tasks section is asking the user for an opinion, insight about the brand, the market or tests his/her knowledge, for example, about training materials or working policies. It usually has rigid structure:
 
-   - header line that names the task (and/or topic, a company, a brand)
+   - header-line that names the task (and/or topic, a company, a brand)
    - photo, reflecting the purpose or content of the text
    - task description-instructions
    - task questions that require number/radio/text input and could be supported by corresponding images
@@ -186,7 +186,7 @@ MyTasks section is ask the user for an opinion, insight about the brand, the mar
 ## 2.3 Charts
 [Go to the top](#table-of-contents)
 
-Chart pages provide graphical representation on the Task topic. Normally, that would use the real answers, generated by multiple users and compared with the base (average, specific market data or target). In this particular app, since there is no database storage and structure, random numbers with set different intervals are generated and visualized using google-graphs.
+Chart pages provide graphical representation on the Task topic. Normally, that would use the real answers, generated by multiple users, and compared with the base (average, specific market data or target). In this particular app since there is no database storage and structure, random numbers with set different intervals are generated and visualized using google-graphs.
 
 To continue user-journey through the tasks execution, the user has 2 action options: to go to another task or exit the section.
 
@@ -235,7 +235,7 @@ Those features could be used to enhance user experience and collect more behavio
 
 - Font Awesome was used to import icons.
 
-- Am I Responsive was used to generate mockup imagery for ReadMe file.
+- Am I Responsive was used to generate mock-up imagery for ReadMe file.
 
 - Chrome was used to test the source code using HTML5 and responsiveness.
 
@@ -261,7 +261,7 @@ Those features could be used to enhance user experience and collect more behavio
 # 4.Testing
 [Go to the top](#table-of-contents)
 
-The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate every page, links and  JavaScript code of the project to ensure there were no syntax errors in the project.
+The W3C Markup Validator, W3C CSS Validator and JSHint were used to validate every page, links, and  JavaScript code of the project to ensure there were no syntax errors in the project.
 
 
 ![W3C-html-validation](/assets/readme-assets/nu-html-checker500.jpg)
@@ -284,7 +284,7 @@ Each of the pages were tested for
 2. all images and texts are clear, readable and are not distorted on different screens
 3. all links to other pages work 
 4. accessibility (clarity of the page and next steps)
-5. code executes what it suppose to
+5. code executes what it supposes to
 6. the flow in general 
 
 ALL tests PASSED.
