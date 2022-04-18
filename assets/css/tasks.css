@@ -12,7 +12,6 @@ body {
     letter-spacing: 2px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 300;
-
 }
 
 #logo-image {
@@ -21,6 +20,7 @@ body {
     padding: 5px;
     margin-left: 5px;
 }
+
 
 /*Banner - beadcrumb CSS*/
 

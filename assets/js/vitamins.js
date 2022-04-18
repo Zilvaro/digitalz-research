@@ -1,5 +1,4 @@
 
-
 /**vitamin research graph
  * - capture the element clicked
  * - create 5 random results (sum=100%) 
@@ -7,7 +6,7 @@
  * - create a graph showing the bottle pictures and the % of answers
  */
 
- function vitaminChart() {
+function vitaminChart() {
 
 google.charts.load('current', { 'packages': ['corechart'] });
 google.charts.setOnLoadCallback(drawChart);
@@ -21,7 +20,7 @@ let answerNumberVitamins = Math.floor(Math.random() * 56) + 40;
 
 function drawChart() {
     var data = google.visualization.arrayToDataTable([
-        ['Contry', '% of answers'],
+        ['Brand', '% of answers'],
         ['Essential Elements', num1],
         ['Garden of Life', num2],
         ['Viva Naturals', num3],
